@@ -19,7 +19,7 @@ S.A.R.A. (Sistema de Asesoramiento y Resolución de Consultas Empresariales) es 
 1. Clona este repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/tu-usuario/sara-asistente-virtual.git
+   git clone https://github.com/CDXInnova/S.A.R.A-Assistant-.git
    ```
 
 2. Instala los paquetes Python necesarios:
