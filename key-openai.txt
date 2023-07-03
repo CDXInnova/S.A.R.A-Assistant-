@@ -1,0 +1,5 @@
+Api key de Assistant
+"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"
+
+Api key de Chat 
+"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"
