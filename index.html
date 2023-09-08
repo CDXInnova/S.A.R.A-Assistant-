@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Estilos CSS para la estructura */
+    #container {
+      background-color: #333;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+      font-family: monospace;
+    }
+
+    button {
+      padding: 20px 40px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    #textContainer {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    img {
+      width: 400px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    }
+
+        hr.vertical-line {
+      border: 2px double white;
+      height: 100%;
+      margin: 0;
+    }
+
+    #separator-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #separator {
+      background-color: turquoise;
+      width: 20px;
+      height: 100%;
+      margin: 0 20px; /* Espacio a ambos lados */
+    }
+    #inputFields {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src="https://drive.google.com/uc?id=1mJOZky0C6HoLVh6wXWjMaglUaz-Hujcx" alt="Imagen" id="imagen">
+    <div id="separator"></div>
+    <hr class="vertical-line">
+    <div id="textContainer">
+      <h1>Hola, soy SARA. ¿Cómo puedo ayudarte?</h1>
+      <button id="modoTextoBtn">Modo Texto</button>
+      <button id="modoVozBtn">Modo Voz</button>
+      <div id="inputFields" style="display: none;">
+        <input type="text" id="userInput" placeholder="Escribe tu mensaje">
+        <input type="text" id="response" placeholder="Respuesta">
+      </div>
+    </div>
+  </div>
+  <script>
+    const modoTextoBtn = document.getElementById("modoTextoBtn");
+    const inputFields = document.getElementById("inputFields");
+
+    modoTextoBtn.addEventListener("click", () => {
+      inputFields.style.display = "block";
+    });
+
+    // Aquí puedes agregar la lógica JavaScript para manejar la entrada de texto y mostrar la respuesta.
+  </script>
+</body>
+</html>
